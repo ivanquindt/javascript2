@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+let nombre = prompt("Ingresa tu nombre");
+
+let apellido = prompt("Ingresa tu apellido");
+
+if ((nombre !="") && (apellido !="")) 
+
+    alert(" Hola! "+nombre + apellido+ ", en que podemos ayudarte?");
+    let opcion = prompt("1-Necesito una Fragancia 2-Quiero una devolucion")
+    while(opcion != "Esc")
+        switch (opcion){
+        case'1': alert("Aqui tienes un listado de los perfumes disponibles")
+            const perfumes = [{nombre: "Perfume 1", precio: 100},
+                            {nombre: "Perfume 2", precio: 200},
+                            {nombre: 'Perfume 3', precio: 300},
+                            {nombre: 'Perfume 4', precio: 400},
+                            {nombre: 'Perfume 5', precio: 500},]
+            
+            const buscado = perfumes.map (perfumes => perfumes.nombre)
+            alert(buscado)
+            let opcion = prompt('Necesitas algo mas?. 1-Ver Precios 2-Ver Stock 3-Ver Perfumes baratos')
+    while(opcion != "Esc")
+        switch (opcion){
+        case '1': alert ('Aqui tienes los precios')}
+            const precios = perfumes.map (perfumes => perfumes.precio )
+            alert(precios)
+            break;
+
+            case '2': alert('Aqui veras perfumes baratos')
+            
+            
+    
+    
+    
+    }
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

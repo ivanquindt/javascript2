@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = prompt("Ingresa tu nombre");
+
+let apellido = prompt("Ingresa tu apellido");
+
+if ((nombre !="") && (apellido !="")) {
+
+    alert(" Hola! "+nombre + apellido+ ", en que podemos ayudarte?");
+    let opcion = prompt("1-Necesito una Fragancia 2-Quiero una devolucion")
+    while(opcion != "Esc"){
+        switch (opcion){
+        case "1":
+            alert("Elegiste la opcion 1");
+            let VersaceDylanBlue = prompt("Versace Dylan Blue Si/No");
+            while(VersaceDylanBlue !="Esc"){
+                switch(VersaceDylanBlue){
+                    case "Si":
+                        alert("Versace Dylan Blue Añadido al carrito");
+                        break;
+                    case "No":
+                        alert("Continuamos?")
+                        break;
+                    default:
+                        alert("Ningun perfume elegido")
+                        break;
+                }
+            }
+            break;
+        case "2": 
+            alert("Elegiste la opcion 2")
+        
+            break;
+        default:
+            alert("Refresque la pagina y eliga una opcion")
+            break;
+        }
+        
+    }
+}else{
+    alert("Error: Ingresar nombre y apellido")
+}
+
+    </script>
+</body>
+</html>
